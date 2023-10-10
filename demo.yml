@@ -1,0 +1,14 @@
+---
+- hosts: all
+  tasks:
+    - name: Ping All Host Nodes
+      ping:
+      remote_user: ansible
+--- 
+
+
+# Syntax to execute a playbook
+ansible-playbook demo.yml --syntax-check
+
+# syntax to execute a playbook
+ansible-playbook demo.yml
